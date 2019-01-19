@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+my:
+  name: lee
+  age: 3123123
+
+#  ${random} 可以用来生成各种不同类型的随机值
+bean:
+  name: Charles
+  age: 1
+  number:  ${random.int}
+  uuid: ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: hi,i'm  ${bean.name}
+
