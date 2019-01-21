@@ -3,6 +3,8 @@ package com.lee.springboot.service.impl;
 import com.lee.springboot.bean.Account;
 import com.lee.springboot.dao.AccountDao;
 import com.lee.springboot.service.AccountService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -11,6 +13,7 @@ import java.util.List;
  * @Date: 2019.1.20
  * @Desc:
  */
+@Service
 public class AccountServiceImpl implements AccountService {
 
     @Autowired
@@ -18,26 +21,26 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public int add(Account account) {
-        return 0;
+        return accountDao.add(account);
     }
 
     @Override
     public int update(Account account) {
-        return 0;
+        return accountDao.update(account);
     }
 
     @Override
     public int delete(int id) {
-        return 0;
+        return accountDao.delete(id);
     }
 
     @Override
     public Account findAccountById(int id) {
-        return null;
+        return accountDao.findAccountById(id);
     }
 
     @Override
     public List<Account> findAccountList() {
-        return null;
+        return accountDao.findAccountList();
     }
 }

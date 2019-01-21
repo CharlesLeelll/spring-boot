@@ -2,7 +2,6 @@ spring:
   profiles:
     active: dev
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/spring_boot
+    url: jdbc:mysql://localhost:3306/spring_boot?serverTimezone=UTC
     username: root
-    password:
+    password: 5LOVEyou.mysql

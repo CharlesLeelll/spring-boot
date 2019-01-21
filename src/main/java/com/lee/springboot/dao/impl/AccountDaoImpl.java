@@ -5,6 +5,7 @@ import com.lee.springboot.dao.AccountDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @Date: 2019.1.19
  * @Desc:
  */
+@Repository
 public class AccountDaoImpl implements AccountDao {
 
     @Autowired
